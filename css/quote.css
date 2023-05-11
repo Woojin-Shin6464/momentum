@@ -1,0 +1,18 @@
+/* Quote */
+.momentum-quote {
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  margin: 35px;
+  pointer-events: none;
+  /* max-width: 600px; */
+}
+
+.momentum-quote span:last-child {
+  margin-top: 10px;
+  font-size: 18px;
+}

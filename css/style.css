@@ -1,0 +1,52 @@
+@import "greetings.css";
+@import "search-bar.css";
+@import "bookmark.css";
+@import "quote.css";
+@import "weather.css";
+@import "todo.css";
+
+body {
+  font-family: "DynaPuff";
+  color: white;
+  margin: 0;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.momentum {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  top: 70px;
+}
+
+.momentum-clock {
+  margin: 20px 0 0 0;
+  pointer-events: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.bgImage {
+  border: none;
+  position: absolute;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}

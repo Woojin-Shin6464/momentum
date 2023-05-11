@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woojin's Momentum</title>
+    <link rel="icon" type="image.png" href="img/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="momentum">
+      <!-- Clock -->
+      <h1 class="momentum-clock">00:00:00</h1>
+
+      <!-- Login -->
+      <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+        <!-- <input type="submit" value="Log In" /> -->
+      </form>
+
+      <!-- Greeting -->
+      <h2 class="momentum-greeting" class="hidden"></h2>
+
+      <!-- Search -->
+      <article class="search">
+        <form class="search__bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="search__bar-text" required maxlength="255" value="" placeholder="Google 검색" />
+        </form>
+      </article>
+
+      <!-- Bookmark -->
+      <button id="bookmark-btn" type="button">
+        <i class="fa-solid fa-plus fa-lg"></i>
+      </button>
+
+      <div class="bookmark-container hidden">
+        <form class="bookmark-form">
+          <h6>이름</h6>
+          <input class="bookmark-name" type="text" required />
+          <h6>URL</h6>
+          <input class="bookmark-url" type="url" required />
+          <button class="bookmark-btn__cancel">취소</button>
+          <button class="bookmark-btn__submit">완료</button>
+        </form>
+      </div>
+
+      <div class="bookmark">
+        <div id="bookmark-column"></div>
+      </div>
+
+      <!-- <div>
+        <a href="https://www.google.com/" target="self"><img src="https://www.google.com/favicon.ico" /></a>
+        <div class="imo-text">구글</div>
+      </div> -->
+
+      <!-- To Do -->
+      <form id="todo-form">
+        <input class="todo__form-text" type="text" placeholder="Write a To-Do and Press Enter" required />
+      </form>
+
+      <ul id="todo-list"></ul>
+
+      <!-- Quote -->
+      <div class="momentum-quote">
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Weather -->
+      <div class="momentum-weather">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </body>
+  <script src="js/greetings.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/bookmark.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="https://kit.fontawesome.com/8b532d0c0e.js" crossorigin="anonymous"></script>
+</html>

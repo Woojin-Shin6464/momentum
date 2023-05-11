@@ -1,0 +1,35 @@
+/* Search */
+.search__bar {
+  width: 550px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.fa-magnifying-glass {
+  margin: 12px 10px 15px 0;
+  color: gray;
+}
+
+.search__bar-text {
+  width: 470px;
+  height: 35px;
+  position: relative;
+  top: -1px;
+  border: none;
+  background-color: white;
+}
+
+.search__bar-text:focus {
+  outline: none;
+}
+
+.search__bar-text:focus::placeholder {
+  opacity: 0;
+  /* color:transparent; -> 이것도 투명효과*/
+}
+
+.search__bar-text::placeholder {
+  font-size: 16px;
+}

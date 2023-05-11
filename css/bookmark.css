@@ -1,0 +1,69 @@
+/* Bookmark */
+.bookmark-container {
+  position: absolute;
+  top: 300px;
+  background-color: white;
+  opacity: 0.6;
+}
+
+#bookmark-btn {
+  width: 45px;
+  height: 45px;
+  margin: 30px;
+  background-color: white;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+}
+
+#bookmark-btn:hover {
+  animation-name: rotate;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0.4;
+    rotate: 30deg;
+  }
+  50% {
+    opacity: 0.6;
+    rotate: 60deg;
+  }
+  100% {
+    opacity: 0.8;
+    rotate: 90deg;
+  }
+}
+
+.bookmark-form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookmark-form h6 {
+  color: black;
+  margin: 0 0 0 12px;
+  margin-right: auto;
+}
+
+.bookmark-form input {
+  width: 500px;
+  height: 30px;
+  margin: 0 10px 10px 10px;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(62, 133, 233);
+  border-left: none;
+}
+
+.bookmark-form button {
+  width: 50px;
+  height: 30px;
+  margin: 5px;
+  margin-left: auto;
+}

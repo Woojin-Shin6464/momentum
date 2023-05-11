@@ -1,0 +1,30 @@
+#login-form input {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form input:focus::placeholder {
+  opacity: 0;
+  /* color:transparent; -> 이것도 투명효과*/
+}
+
+#login-form input::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.momentum-greeting {
+  margin: 20px 0;
+  pointer-events: none;
+  font-size: 30px;
+  font-weight: 400;
+}
